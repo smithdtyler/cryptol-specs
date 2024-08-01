@@ -1,0 +1,5 @@
+interface module Primitive::Keyless::Hash::DigestInterface where
+    type MessageUpperBound : #
+    type DigestLength : #
+
+    digest : {m} (width m <= MessageUpperBound) => [m] -> [DigestLength]
