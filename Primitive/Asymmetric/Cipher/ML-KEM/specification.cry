@@ -584,7 +584,7 @@ parameter
 
 
 
-import Primitive::Keyless::Hash::utils
+import Primitive::Keyless::Hash::KeccakBitOrdering
 import Primitive::Keyless::Hash::SHAKE::SHAKE128
 XOF(d) = groupBy`{8}(shake128(fromBytes(d)))
 J(s) = take(groupBy(shake256(fromBytes(s))))
